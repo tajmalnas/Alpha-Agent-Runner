@@ -35,6 +35,7 @@ Built using modern technologies like **React**, **React Flow**, **Tailwind CSS**
 - 💾 **Supabase** for PostgreSQL database & authentication
 - 🚀 **Redis** for caching and real-time job tracking
 - 🔄 **Streaming APIs** for continuous data flow from LLMs
+- ⚡ **Serper API** for web searching
 
 ---
 
