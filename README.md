@@ -16,6 +16,7 @@ Built using modern technologies like **React**, **React Flow**, **Tailwind CSS**
 - 🚀 **Full-stack Integration**: Built with a backend in Node.js + Express and frontend in React + Vite.
 - 🔒 **Validation**: Uses `zod` for runtime validation of inputs and outputs.
 - 🔁 **Caching**: Redis used for efficient job and response caching.
+- 🔧**LLM**: Gemini 2.0 Flash for quick and efficient response.
 
 ---
 
@@ -37,36 +38,6 @@ Built using modern technologies like **React**, **React Flow**, **Tailwind CSS**
 
 ---
 
-## 📁 Project Structure
-
-alpha-agent-runner/
-│
-├── client/ # Frontend (React + Vite)
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ └── AgentRunner.tsx # Main visual runner
-│ ├── public/
-│ └── index.html
-│
-├── backend/ # Backend (Node.js + Express)
-│ ├── src/
-│ │ ├── index.ts # Entry point
-│ │ ├── routes/run.ts # Agent execution route
-│ │ ├── utils/
-│ │ └── services/
-│ └── package.json
-│
-├── .gitignore
-├── README.md
-└── tsconfig.json
-
-yaml
-Copy
-Edit
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -84,10 +55,4 @@ cd backend
 npm install
 npm run build      # or use ts-node if you're in dev
 npm start
-Or use ts-node for development:
-
-bash
-Copy
-Edit
-npm install --save-dev ts-node typescript
-npx ts-node src/index.ts
+```
