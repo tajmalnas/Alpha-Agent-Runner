@@ -1,4 +1,3 @@
-import React from 'react';
 import { Handle, Position } from '@xyflow/react';
 
 export default function ToolSelectNode({ data }: { data: any }) {
@@ -13,7 +12,7 @@ export default function ToolSelectNode({ data }: { data: any }) {
         value={data.value}
         onChange={data.onChange}
       >
-        {data.tools?.map(t => (
+        {data.tools?.map((t:any) => (
           <option key={t} value={t}>
             {t}
           </option>

@@ -92,7 +92,7 @@ export default function AgentRunner() {
     setResponse("");
   
     try {
-      const res = await fetch("https://alpha-agent-runner.vercel.app/run", {
+      const res = await fetch("https://alpha-agent-runner.onrender.com/run", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt, tool }),
@@ -213,7 +213,7 @@ export default function AgentRunner() {
           >
             <Controls />
             <MiniMap nodeStrokeWidth={3} zoomable pannable />
-            <Background variant="dots" gap={16} size={2} color="#ddd" />
+            <Background variant={"dots" as any} gap={16} size={2} color="#ddd" />
           </ReactFlow>
         </div>
       </div>
