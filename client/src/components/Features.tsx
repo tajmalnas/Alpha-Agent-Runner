@@ -16,7 +16,7 @@ interface FeatureCardProps {
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, delay }) => {
-  const { ref, inView } = useInView({ threshold: 0.1 });
+  const { ref, inView } = useInView({ threshold: 0.1 }) as { ref: any; inView: any; };
 
   return (
     <div 
@@ -38,7 +38,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, del
 };
 
 const Features: React.FC = () => {
-  const { ref, inView } = useInView({ threshold: 0.1 });
+  const { ref, inView } = useInView({ threshold: 0.1 }) as { ref: any; inView: any; };
 
   const features = [
     {

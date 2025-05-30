@@ -37,7 +37,7 @@ const Step: React.FC<StepProps> = ({ icon, title, description, stepNumber, inVie
 };
 
 const HowItWorks: React.FC = () => {
-  const { ref, inView } = useInView({ threshold: 0.1 });
+  const { ref, inView } = useInView({ threshold: 0.1 })as { ref: any; inView: any; };
 
   const steps = [
     {

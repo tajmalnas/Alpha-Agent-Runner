@@ -4,7 +4,7 @@ import { Play, Pause } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const Demo: React.FC = () => {
-  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true }) as { ref: any; inView: any; };
   const [isPlaying, setIsPlaying] = useState(false);
 
   const navigate = useNavigate();
