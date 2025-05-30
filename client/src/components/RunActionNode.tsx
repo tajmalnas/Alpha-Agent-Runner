@@ -1,7 +1,6 @@
-import React from 'react';
 import { Handle, Position } from '@xyflow/react';
 
-export default function RunActionNode({ data }) {
+export default function RunActionNode({ data }: { data: any }) {
   return (
     <div style={{ border: '1px solid #ccc', padding: '20px', borderRadius: '8px', background: '#fff', textAlign: 'center' }}>
       <Handle type="target" position={Position.Left} id="prompt-in" style={{ top: '35%', background: '#007bff', width: '10px', height: '10px' }} />
