@@ -5,7 +5,7 @@ import { router as runRoute } from "./routes/run"
 const app = express()
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://alpha-agent-runner.vercel.app"], // allow dev + prod
+    origin: ["http://localhost:5173", "https://alpha-agent-runner.vercel.app","https://alpha-agent-runner-1z5s.vercel.app/"], // allow dev + prod
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type"],
     credentials: true,

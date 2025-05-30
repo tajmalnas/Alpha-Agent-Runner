@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Zap } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navigate = useNavigate();
 
   // Detect scroll position for header styling
   useEffect(() => {
@@ -54,14 +57,12 @@ const Header: React.FC = () => {
                 {item}
               </button>
             ))}
-            <a 
-              href="https://github.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <button 
+              onClick={() => navigate('/agent-runner')}
               className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors"
             >
               Get Started
-            </a>
+            </button>
           </nav>
 
           {/* Mobile menu button */}
@@ -92,14 +93,12 @@ const Header: React.FC = () => {
                   {item}
                 </button>
               ))}
-              <a 
-                href="https://github.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
+              <button 
+                onClick={() => navigate('/agent-runner')}
                 className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors w-full text-center"
               >
                 Get Started
-              </a>
+              </button>
             </nav>
           </div>
         </div>
