@@ -92,7 +92,7 @@ export default function AgentRunner() {
     setResponse("");
   
     try {
-      const res = await fetch("http://localhost:4000/run", {
+      const res = await fetch("https://alpha-agent-runner.vercel.app/run", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt, tool }),
