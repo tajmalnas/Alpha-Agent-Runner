@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useInView } from '../hooks/useInView';
-import { Play, Pause } from 'lucide-react';
+import { Play } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const Demo: React.FC = () => {
